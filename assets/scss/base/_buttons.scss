@@ -1,0 +1,134 @@
+.btn {
+  background:$white;
+  color: $black;
+  width: 135px;
+  height:45px;
+  padding: 12px;
+  font-weight:500;
+  border-radius: 22.5px;
+  margin: 10px 0 ;
+  font-size:12px;
+  font-family: $primary-font;
+  cursor: default;
+  border: 2px solid $white;
+  text-transform:uppercase;
+  text-align:center;
+  @include nice_transition(0.3s);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color:$white;
+    background: transparent;
+  }
+  &.btn-second {
+    color:$white;
+    background: transparent;
+    border: 2px solid $white;
+    &:hover,
+    &:active,
+    &:focus {
+      background: $white;
+      color: $black;
+    }
+  }
+  &.btn-wide {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.btn-download {
+  color: $white;
+  width: 180px;
+  height:55px;
+  font-size:16px;
+  padding: 10px 20px;
+  font-weight:500;
+  border-radius: 27.5px;
+  margin: 0px 15px ;
+  font-family: $primary-font;
+  cursor: default;
+  border: 2px solid $white;
+  text-transform:capitalize;
+  text-align:center;
+  display: inline-block;
+  @include nice_transition(0.3s);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color:$black;
+    background: $white;
+    text-decoration:none;
+  }
+  i{
+    font-size:30px;
+    float: left;
+  }
+  span{
+    margin-top: 6px;
+    margin-left: 10px;
+    float: left;
+  }
+}
+
+.btn-gradient {
+  background: $gradient;
+  display: inline-block;
+  font-size:12px;
+  padding: 2px;
+  font-weight: 500;
+  border-radius: 25px;
+  margin: 0px 15px;
+  font-family: "Montserrat", sans-serif;
+  cursor: default;
+  text-transform: uppercase;
+  @include nice_transition(0.3s);
+  &a:hover,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    color:$white;
+    background: $gradient;
+    text-decoration:none;
+  }
+}
+
+ .btn-gradient  a {
+    background: $white;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    font-size:12px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding:10px;
+    text-decoration:none;
+    @include nice_transition(0.3s);
+    span{
+     background: $gradient;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color:$white;
+      background: $gradient;
+      text-decoration:none;
+
+    span{
+     background: $white;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: $white;
+    }
+    }
+
+  }
+
+a.btn, .btn a, .btn-download a, a.btn-download{
+    text-decoration:none;
+}

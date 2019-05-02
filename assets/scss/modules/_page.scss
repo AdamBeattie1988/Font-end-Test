@@ -1,0 +1,82 @@
+.intro{
+  width:100%;
+  max-width:850px;
+  margin:0 auto;
+  margin-bottom:65px;
+}
+
+#pricing{
+  padding:90px 0;
+  background:$light-grey;
+}
+
+#download{
+    padding: 90px 0;
+    background: $gradient;
+    color:$white;
+    h2, .h2{
+      color:$white;
+    }
+    .intro{
+      margin-bottom:50px;
+    }
+}
+
+#contact{
+    padding: 90px 0;
+    background:$white;
+    .intro{
+      max-width:750px;
+    }
+}
+
+
+.pricing-opt{
+  background:$off-white;
+  padding-bottom:50px;
+  .heading{
+    background:$gradient;
+    color:$off-white;
+    padding:20px 0 15px 0;
+    .price{
+      font-size:55px;
+      font-family:$secondary-font;
+      font-weight:600;
+    }
+    .month{
+      font-size:14px;
+      text-transform:lowercase;
+    }
+    .plan-type{
+      margin-bottom:10px;
+      display:block;
+    }
+  }
+  ul{
+      padding:30px 0;
+      list-style:none;
+      display: table;
+      margin: 0 auto;
+      li{
+        list-style:none;
+        line-height:50px;
+      }
+  }
+}
+
+@media (max-width: 992px) { 
+  #pricing{
+    .col-md-4:nth-child(-n+3){
+     margin-bottom:30px;
+    }
+  }
+
+  ul.opt-list{
+    li{
+      span{
+        float:left;
+      }
+    }
+  }
+}
+

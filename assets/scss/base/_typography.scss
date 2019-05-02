@@ -1,0 +1,141 @@
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  color: $body;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+}
+
+a {
+  color: $black;
+
+  @include nice_transition(0.3s);
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer !important;
+    text-decoration:underline;
+  
+  }
+}
+
+main{
+  a{
+    color:$black;
+    text-decoration:underline;
+    @include nice_transition(0.3s);
+  }
+  aside{
+    a{
+      text-decoration:none;
+    }
+  }
+}
+
+
+ul, ol{
+  padding-left:15px;
+}
+
+.member h3{
+      margin-top: 0px;
+}
+
+
+h1, .h1{
+    font-size: 48px;  
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+h2, .h2{
+    font-size: 28px;  
+    font-weight: bold;
+    margin-bottom:40px;
+    margin-top:0px;
+    text-transform:uppercase;
+    color:$black;
+}
+
+h3, .h3{
+    font-size: 22px;  
+    margin-top:0px;
+    text-transform:uppercase;
+}
+
+h4, .h4{
+    font-size: 16px;  
+    text-transform:uppercase;
+}
+
+h5, .h5{
+    font-size: 14px;  
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+
+@media only screen and (max-width: 991px) {
+  h1, .h1{
+      font-size: 44px;  
+      font-weight: bold;
+  }
+
+  h2, .h2{
+      font-size: 24px;  
+      font-weight: bold;
+      margin-bottom:30px;
+      margin-top:0px;
+  }
+
+  h3, .h3{
+      font-size: 18px;  
+      font-weight: bold;
+      margin-top:0px;
+  }
+
+  h4, .h4{
+      font-size: 14px;  
+      font-weight: bold;
+      text-transform:uppercase;
+  }
+
+  h5, .h5{
+      font-size: 12px;  
+      font-weight: bold;
+      text-transform:uppercase;
+  }
+
+    p, ul, li{
+      font-size:14px;
+    }
+    .intro-content p{
+      font-size:14px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+ h1, .h1{
+      font-size: 36px;
+      line-height:40px;  
+      font-weight: bold;
+  }
+
+  h2, .h2{
+      font-size: 22px;  
+      font-weight: bold;
+      margin-bottom:30px;
+      margin-top:0px;
+  }
+
+  h3, .h3{ 
+      font-size: 18px;  
+      font-weight: bold;
+      margin-top:0px;
+  }
+}
